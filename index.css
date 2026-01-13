@@ -5,3 +5,20 @@ body{
 h1, h2, h3, p{
     color:#fff
 }
+
+h1, h2, h3{
+    text-align: center;
+    margin-top: 20px;
+}
+
+p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+img{
+    width:350px;
+    height:200px;
+    position: relative;
+    left:50px;
+}
