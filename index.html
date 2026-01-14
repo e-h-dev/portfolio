@@ -45,12 +45,30 @@
                 </div>
                 <div class="col-2"></div>
             </div>
-            <div class="row">
+            <div class="row" id="reveal-form">
                 <div class="col-5"></div>
                 <div class="col-2">
-                    <button class="btn ml-2">Contact Me</button>
+                    <button class="btn ml-2" onclick="openForm()">Contact Me</button>
                 </div>
                 <div class="col-5"></div>
+            </div>
+            <div class="row form shadow" id="form">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-9">
+                        <h3>Send Message</h3>
+                    </div>
+                    <div class="col-1">
+                        <i class="fa-solid fa-xmark" id="form-close" onclick="closeForm()"></i>
+                    </div>
+                </div>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <div><input type="hidden" name="access_key" value="89c1d100-5a36-4796-acfe-ab82d5504b74"></div>
+                    <div><input type="text" name="name" placeholder="Your Name" required></div>
+                    <div><input type="email" name="email" placeholder="Your email" required></div>
+                    <div><textarea name="message" placeholder="Your Message" required></textarea></div>
+                    <div><button class="btn" type="submit">Submit</button></div>
+                </form>
             </div>
         </div>
     </section>
