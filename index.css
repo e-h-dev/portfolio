@@ -75,3 +75,11 @@ input, textarea{
     color:#fff;
     background-color: rgb(88, 88, 114);
 }
+
+hr{
+    color:#fff;
+    width:80%;
+    position: relative;
+    left:10%;
+    margin-bottom: 30px;
+}
